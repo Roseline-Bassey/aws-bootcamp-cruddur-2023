@@ -55,7 +55,7 @@ To create a Billing Alarm I opened the [CloudWatch Console](https://console.aws.
 - Under `Total Estimated Charges` Choose `USD`
 - Select `Metric`
 Next, I named the billing alarm as "AWS Bootcamp Billing Alert" and set the Threshold value to $10. 
-See [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html) to continue.
+See [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html) to complete the steps.
 
 
 Furthermore, AWS charges $0.0 for the first 10 alarm metrics, after which you may pay up to $0.30 per instance per month. See the [CloudWatch Pricing Documentation](https://aws.amazon.com/cloudwatch/pricing/) 
