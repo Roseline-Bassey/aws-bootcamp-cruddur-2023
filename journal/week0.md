@@ -17,7 +17,7 @@ An architectural diagram is a visual representation of all components of a syste
 These are a few different kinds of architectural diagrams:
 
 ### 1. Conceptual Architecture Diagram: 
-It is a pictorial diagram that depicts the relationships of significant components of a system by using blocks, lines or arrows that are easily understood. It is also known as a “Napkin Design.”
+It is a pictorial diagram that depicts the relationships of significant components of a system by using blocks, lines, or arrows that are easily understood. It is also known as a “Napkin Design.”
 
 ![aws3](https://user-images.githubusercontent.com/47522955/219877042-70ad48c8-753a-4ceb-bac5-3d0e843904e7.jpg)
 
@@ -31,7 +31,7 @@ My Lucid Chart is available [here](https://lucid.app/lucidchart/a970bd13-b83a-4f
 ### 3. Physical Architecture Diagram:
 this is a physical layout of the system and its components. 
                       
-```It is needful to mention that as a prerequisite for this Bootcamp, I had set up an AWS IAM user, multifactor authentication (MFA), assigned the IAM user a role, granted the IAM user access to billing and cost console and, also set up a [Gitpod account](https://www.gitpod.io/).```
+```It is needful to mention that as a prerequisite for this Bootcamp, I had set up an AWS IAM user, multifactor authentication (MFA), assigned the IAM user a role, granted the IAM user access to billing and cost console, and, also set up a [Gitpod account](https://www.gitpod.io/).```
 
 ## AWS Billing Alerts
 AWS Billing Alerts is a way of monitoring estimated charges for your AWS account. You can do this by enabling ``Billing Alerts`` in your Root User account or an IAM user account that has permission to view billing information. This alarm only gets triggered when your account billing exceeds your threshold. A threshold is a specified percentage of your billing cost set to alert when exceeded. US East (N. Virginia) Region represents AWS global charges.
@@ -75,6 +75,15 @@ AWS provides two free budgets for Free tier accounts, but if you surpass them, y
 
 ![aws4](https://user-images.githubusercontent.com/47522955/219975800-6d3fb89a-cca9-40dd-8fd5-e6477189733e.png)
 
+
+## Enable Cost Explorer
+
+AWS Cost Explorer provides reports, analytics and visualization capabilities that helps track and manage AWS costs. The first time I enabled Cost Explorer it took up to 24 hours for my cost and usage data to pop up.
+
+## AWS Cloudshell
+
+AWS Cloudshell is a browser-based shell that gives you command-line access to your AWS resources in the selected AWS region. I spin up Cloudshell and validated it by running ``aws``.
+Then, ``aws --cli-auto-prompt`` for auto-command prompt and ``aws sts get-caller-identity`` to print my AWS identity.
 
 
 
