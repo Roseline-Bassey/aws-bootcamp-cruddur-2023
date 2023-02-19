@@ -6,7 +6,7 @@ Cruddur, an ephemeral new micro-blogging platform, allows users to post updates 
 
 The company has successfully secured funding for demoing the mock web application to investors. Now, it’s time to get Cruddur to the market by making it production ready at scale. 
 
-Cruddur is a microservice-based application. In this bootcamp, we shall run all our services on [AWS](https://aws.amazon.com/?nc2=h_lg) AWS is a cloud service provider. One of our goals in this bootcamp is minimizing the expenses associated with running services on AWS for as low as possible.
+Cruddur is a microservice-based application. In this bootcamp, we shall run all our services on [AWS](https://aws.amazon.com/?nc2=h_lg). AWS is a cloud service provider. One of our goals in this bootcamp is minimizing the expenses associated with running services on AWS for as low as possible.
 
 To get started with week 0 homework, I'll draw a conceptual and logical diagram.
 
