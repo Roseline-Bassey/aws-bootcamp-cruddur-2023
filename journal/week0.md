@@ -34,7 +34,7 @@ this is a physical layout of the system and its components.
 ```It is needful to mention that as a prerequisite for this Bootcamp, I had set up an AWS IAM user, multifactor authentication (MFA), assigned the IAM user a role, granted the IAM user access to billing and cost console and, also set up a [Gitpod account](https://www.gitpod.io/).```
 
 ## AWS Billing Alerts
-AWS Billing Alerts is a way of monitoring estimated charges for your AWS account. You can do this by enabling ``Billing Alerts`` in your Root User account or an IAM user account that has permission to viewing billing information. This alarm only gets triggered when your account billing exceeds your threshold. A threshold is a specified percentage of your billing cost set to alert when exceeded. US East (N. Virginia) Region represents AWS global charges.
+AWS Billing Alerts is a way of monitoring estimated charges for your AWS account. You can do this by enabling ``Billing Alerts`` in your Root User account or an IAM user account that has permission to view billing information. This alarm only gets triggered when your account billing exceeds your threshold. A threshold is a specified percentage of your billing cost set to alert when exceeded. US East (N. Virginia) Region represents AWS global charges.
 
 I logged into the  [AWS Billing Console](https://us-east-1.console.aws.amazon.com/billing/home?region=us-east-1#/bills?year=2023&month=2) as a Root user to set up Billing Alerts.
 
