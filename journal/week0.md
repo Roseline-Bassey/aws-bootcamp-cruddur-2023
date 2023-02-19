@@ -26,7 +26,7 @@ In software development, a logical architecture diagram guides the research and 
 
 ![Screenshot_20230219_064915](https://user-images.githubusercontent.com/47522955/219965714-24463e11-576e-4556-a1c4-ce84a2f1f3a1.png)
 
-My Lucid Chart is available [here](https://lucid.app/lucidchart/a970bd13-b83a-4fb2-8de5-95a3d0120701/edit?view_items=tCnym.H0SUOy&invitationId=inv_39423882-5909-43be-9d91-ef6153bb8ae)
+My Lucid Chart is available [here](https://lucid.app/lucidchart/a970bd13-b83a-4fb2-8de5-95a3d0120701/edit?viewport_loc=-1506%2C-1046%2C5980%2C2304%2C0_0&invitationId=inv_39423882-5909-43be-9d91-ef6153bb8ae1)
 
 ### 3. Physical Architecture Diagram:
 this is a physical layout of the system and its components. 
