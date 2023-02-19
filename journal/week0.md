@@ -8,7 +8,7 @@ The company has successfully secured funding for demoing the mock web applicatio
 
 Cruddur is a microservice-based application. In this bootcamp, we shall run all our services on [AWS](https://aws.amazon.com/?nc2=h_lg). AWS is a cloud service provider. One of our goals in this bootcamp is minimizing the expenses associated with running services on AWS for as low as possible.
 
-To get started with week 0 homework, I'll draw a conceptual and logical diagram.
+To get started with week 0 homework, I'll draw a conceptual and logical diagram to help fully understand the needs of our application.
 
 ## Architectural Diagrams
 An architectural diagram is a visual representation of all components of a system and the relationship between them.
