@@ -6,9 +6,9 @@ Cruddur, an ephemeral new micro-blogging platform, allows users to post updates 
 
 The company has successfully secured funding for demoing the mock web application to investors. Now, it’s time to get Cruddur to the market by making it production ready at scale. 
 
-Cruddur is a microservice-based application. In this bootcamp, we shall run all our services on [AWS](https://aws.amazon.com/?nc2=h_lg). AWS is a cloud service provider. One of our goals in this bootcamp is minimizing the expenses associated with running services on AWS for as low as possible.
+Cruddur is a microservice-based application. In this bootcamp, we shall run all our services on [AWS](https://aws.amazon.com/?nc2=h_lg). AWS is a cloud service provider. One of our goals in the bootcamp is to minimize cost associated with running services on AWS for as low as possible.
 
-To get started with week 0 homework, I'll draw a conceptual and logical diagram to help fully understand the needs of our application.
+To get started with week 0 homework, I drew a conceptual and logical diagrams to illustrate the needs of our application.
 
 ## Architectural Diagrams
 An architectural diagram is a visual representation of all components of a system and the relationship between them.
@@ -31,24 +31,24 @@ My Lucid Chart is available [here](https://lucid.app/lucidchart/a970bd13-b83a-4f
 ### 3. Physical Architecture Diagram:
 this is a physical layout of the system and its components. 
                       
-```It is needful to mention that as a prerequisite for this Bootcamp, I had set up an AWS IAM user, multifactor authentication (MFA), assigned the IAM user a role, granted the IAM user access to billing and cost console, and, also set up a [Gitpod account](https://www.gitpod.io/).```
+```It is needful to mention that as a prerequisite for this Bootcamp, I had set up an AWS IAM user, multifactor authentication (MFA), assigned the IAM user a role, granted the IAM user access to billing and cost console, and, also set up a``` [Gitpod account](https://www.gitpod.io/).
 
 ## AWS Billing Alerts
-AWS Billing Alerts is a way of monitoring estimated charges for your AWS account. You can do this by enabling ``Billing Alerts`` in your Root User account or an IAM user account that has permission to view billing information. This alarm only gets triggered when your account billing exceeds your threshold. A threshold is a specified percentage of your billing cost set to alert when exceeded. US East (N. Virginia) Region represents AWS global charges.
+AWS Billing Alerts is a way of monitoring estimated charges for your AWS account. You can do this by enabling ``Billing Alerts`` in your ``Root User`` account or an ``IAM user`` account that has permission to view billing information. Billing Alerts only gets triggered when your account billing exceeds your threshold. A threshold is a specified percentage of your billing cost set to alert when exceeded. US East (N. Virginia) Region represents AWS global charges.
 
-I logged into the  [AWS Billing Console](https://us-east-1.console.aws.amazon.com/billing/home?region=us-east-1#/bills?year=2023&month=2) as a Root user to set up Billing Alerts.
+Sign into the  [AWS Billing Console](https://us-east-1.console.aws.amazon.com/billing/home?region=us-east-1#/bills?year=2023&month=2) as a Root user to set up Billing Alerts.
 
-- Under ```Billing Preferences```, I choose ```Receive PDF Invoice By Email``` > ```Receive Free Tier Usage Alerts``` 
-- Provide my email address
-- Check the ```Receive Billing Alerts```
+- Under ```Billing Preferences```, Choose ```Receive PDF Invoice By Email``` > ```Receive Free Tier Usage Alerts``` 
+- Provide email address
+- Check ```Receive Billing Alerts```
 - ```Save Preferences```
 
 ![aws bootcamp 1](https://user-images.githubusercontent.com/47522955/219872468-a6b231e4-d996-449e-8d80-3b889a7d232d.png)
 
 ## Create a Billing Alarm on CloudWatch
-CloudWatch is an Amazon service that collects, monitors, and graphically displays all your logs, event and metric data. 
+CloudWatch is a service in AWS that collects, monitors, and graphically displays all your logs, event and metric data. 
 
-To create a Billing Alarm I opened the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/)
+To create a Billing Alarm I opened [CloudWatch Console](https://console.aws.amazon.com/cloudwatch/)
 
 - Under ```Alarms``` Choose ```All Alarms```
 - `Create alarm `>  `Metric` > `Billing` > `Service`
@@ -62,23 +62,23 @@ Furthermore, AWS charges $0.0 for the first 10 alarm metrics, after which you ma
 
 ![AWS3](https://user-images.githubusercontent.com/47522955/219966160-405cbac8-df8c-4459-a162-14c27115c70f.png)
 
-## Create an AWS Budget
+## Create AWS Budget
 
 With AWS Budget, you can set up a custom budget to monitor your spending and get alerts if your actual cost exceeds your budgeted cost. An actual cost refers to the real, current cost of using AWS services, as reported by AWS. It includes all the charges incurred for using the services, such as instance usage, storage, data transfer, and other applicable fees. 
 Budgeted cost refers to the estimated cost that you have set for using AWS services for a given period to monitor your spending and avoid any unexpected expenses.
 
 I created two Budgets. One for actual dollar spend and the other for Credit spend.
 
-You can achieved this using either AWS CLI or the console. I practised both methods and gained familiarity with each. The "Example Tag Budget" was created using AWS CLI, while the "My Zero-Spend Budget" was created using the AWS Console.
+You can achieved this using either AWS CLI or the console. I practised both methods. The "Example Tag Budget" was created using AWS CLI, while "My Zero-Spend Budget" was created using AWS Console.
 
-AWS provides two free budgets for Free tier accounts, but if you surpass them, you will incur charges.
+AWS provides two free budgets for Free tier accounts and if you surpass the free budgets, you will incur charges.
 
 ![aws4](https://user-images.githubusercontent.com/47522955/219975800-6d3fb89a-cca9-40dd-8fd5-e6477189733e.png)
 
 
 ## Enable Cost Explorer
 
-AWS Cost Explorer provides reports, analytics and visualization capabilities that helps track and manage AWS costs. The first time I enabled Cost Explorer it took up to 24 hours for my cost and usage data to pop up.
+AWS Cost Explorer provides reports, analytics and visualization capabilities that helps track and manage AWS costs. It took few hours for my services cost and usage data to pop up after enabling Cost Explorer for the first time.
 
 ## AWS Cloudshell
 
