@@ -26,6 +26,7 @@ cors = CORS(
 )
 
 @app.route("/api/message_groups", methods=['GET'])
+@cross_origin()
 def data_message_groups():
   user_handle  = 'andrewbrown'
   model = MessageGroups.run(user_handle=user_handle)
@@ -35,6 +36,7 @@ def data_message_groups():
     return model['data'], 200
 
 @app.route("/api/messages/@<string:handle>", methods=['GET'])
+@cross_origin()
 def data_messages(handle):
   user_sender_handle = 'andrewbrown'
   user_receiver_handle = request.args.get('user_reciever_handle')
@@ -61,11 +63,13 @@ def data_create_message():
   return
 
 @app.route("/api/activities/home", methods=['GET'])
+@cross_origin()
 def data_home():
   data = HomeActivities.run()
   return data, 200
 
 @app.route("/api/activities/@<string:handle>", methods=['GET'])
+@cross_origin()
 def data_handle(handle):
   model = UserActivities.run(handle)
   if model['errors'] is not None:
@@ -74,6 +78,7 @@ def data_handle(handle):
     return model['data'], 200
 
 @app.route("/api/activities/search", methods=['GET'])
+@cross_origin()
 def data_search():
   term = request.args.get('term')
   model = SearchActivities.run(term)
@@ -97,6 +102,7 @@ def data_activities():
   return
 
 @app.route("/api/activities/<string:activity_uuid>", methods=['GET'])
+@cross_origin()
 def data_show_activity(activity_uuid):
   data = ShowActivity.run(activity_uuid=activity_uuid)
   return data, 200
