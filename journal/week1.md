@@ -141,6 +141,63 @@ Once I finished building the Docker images, I uploaded them to DockerHub. To pus
 ![Screenshot 2023-03-02 204036](https://user-images.githubusercontent.com/47522955/222779568-658aec8a-cc88-4d68-83a7-a9e44c4408e0.png)
 
 ## Running Docker Containers on Amazon EC2
+Amazon EC2 allows you to create virtual machines, or instances, that run on the AWS Cloud
+To launch an instance on AWS: 
+
+Go to EC2 Dashboard
+Click on `Launch Instance`
+Give the instance a name the instance, in my case I named my instance `AWS Cloud Project bootcamp-Frontend`
+Select free tier eligible Linux2 AMI instance 
+Choose the t2.micro instance type
+Added a key pair; Key pair to securely connect to your instance. Ensure that you have access to the selected key pair before you launch the instance.
+
+Under Network Settings
+I created a new security group and allow traffic from SSH, and HTTP from `Anywhere 0.0.0.0/0` 
+Left the storage volume at default `1 volume(s) - 8 GiB`
+Click on `Launch Instance`
+To connect to our running instance, click on the `connect` button on the top right to connect to our instance. To connect to the instance via an SSH Client, I used PuTTY, a stand alone SSH client. 
+
+
+I ran the commands:
+``` sh
+// to update packages
+sudo yum update -y 
+
+//to install docker
+sudo amazon-linux-extras install docker -y 
+
+//to start Docker
+sudo service docker start 
+
+//to add the ec2-docker user to the group
+sudo usermod -a -G docker ec2-user
+
+// I needed to logout to take affect
+Logout
+
+// login again
+ssh -i "ec2-docker.pem" ec2-user@ec2-54-90-143-164.compute-1.amazonaws.com
+
+// check the docker version
+docker --version
+
+// pull the image
+docker pull roselinebb/aws_cloud_bootcamp_repo:latest
+
+// list the images
+docker images
+
+// run the conatiner
+docker run -d -p 80:3000 --name frontend roselinebb/aws_cloud_bootcamp_repo:latest
+
+// check the running container
+docker ps
+
+// exec into docker container
+docker exec -it frontend /bin/sh
+```
+
+I can now access my frontend instance on my web browser via the public DNS address.
 
 
 
