@@ -4,7 +4,7 @@
 
 
 
-```ymal
+```yaml
 version: "3.8"
 services:
   backend-flask:
@@ -60,4 +60,5 @@ networks:
     name: cruddur
 volumes:
   db:
-    driver: local```
+    driver: local
+```
