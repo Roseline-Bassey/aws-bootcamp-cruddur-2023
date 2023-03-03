@@ -145,16 +145,4 @@ Once I finished building the Docker images, I uploaded them to DockerHub. To pus
 
 
 
-
-
-
-![Screenshot_20230219_065431](https://user-images.githubusercontent.com/47522955/222780740-ec76cb51-84d4-4f0b-93c6-1a17f8de5739.png)
-
-
-
-
-![Screenshot_20230228_100146](https://user-images.githubusercontent.com/47522955/222780602-cc115283-17b3-42eb-b9b6-739c8633c19e.png)
-
-
-
 ![Screenshot 2023-03-02 203703](https://user-images.githubusercontent.com/47522955/222780887-6e9cf3c5-3bca-416d-bf0f-a880a5c1d0cc.png)
