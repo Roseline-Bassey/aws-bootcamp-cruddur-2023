@@ -159,41 +159,41 @@ To connect to our running instance, click on the `connect` button on the top rig
 
 
 I ran the commands:
-``` sh
-// to update packages
+```sh
+# to update packages
 sudo yum update -y 
 
-//to install docker
+# to install docker
 sudo amazon-linux-extras install docker -y 
 
-//to start Docker
+# to start Docker
 sudo service docker start 
 
-//to add the ec2-docker user to the group
+# to add the ec2-docker user to the group
 sudo usermod -a -G docker ec2-user
 
-// I needed to logout to take affect
+# I needed to logout to take affect
 Logout
 
-// login again
+# login again
 ssh -i "ec2-docker.pem" ec2-user@ec2-54-90-143-164.compute-1.amazonaws.com
 
-// check the docker version
+# check the docker version
 docker --version
 
-// pull the image
+# pull the image
 docker pull roselinebb/aws_cloud_bootcamp_repo:latest
 
-// list the images
+# list the images
 docker images
 
-// run the conatiner
+# run the conatiner
 docker run -d -p 80:3000 --name frontend roselinebb/aws_cloud_bootcamp_repo:latest
 
-// check the running container
+# check the running container
 docker ps
 
-// exec into docker container
+# exec into docker container
 docker exec -it frontend /bin/sh
 ```
 
