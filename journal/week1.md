@@ -18,7 +18,7 @@ Containerization is a process of packaging code along with the libraries and dep
 
 ## Docker
 Docker is a software tool used for building, deploying, and managing containers. I will be using Docker to build and run both our Frontend and Backend images and then push these Docker images to a public repository on DockerHub. [Dockerhub](https://hub.docker.com/) is a container registry for hosting Docker images. 
-frontend and Backend
+
 
 
 ## Writing a Dockerfile for the Frontend and Backend Applications
@@ -135,3 +135,7 @@ CMD [ "python3", "-m", "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```
 
 ## Push and tag an image to DockerHub
+Once I finished building the Docker images, I uploaded them to DockerHub. To push an image to DockerHub, you must first create an account and a repository where the image will be hosted. I logged into my Docker account from the terminal using the command `docker login` and provided my Docker ID. Then, I entered the command `docker build -t <hub-user>/<repo-name>[:<tag>]` to tag the image and specify the repository. Finally, I used the command `docker push <hub-user>/<repo-name>:<tag>` to push the images to DockerHub.
+
+
+![Screenshot 2023-03-02 204036](https://user-images.githubusercontent.com/47522955/222779568-658aec8a-cc88-4d68-83a7-a9e44c4408e0.png)
